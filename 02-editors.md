@@ -31,7 +31,7 @@ Both Emacs and vim have built-in interactive tutorials that you can try.
 
 What terminal editor will you use? How did you make your decision?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+1. I chose to use emacs because it is a very flexible and customizable text editor (and many other things). Also because I watched a video where Aaron was showing the customizations that he had made to his emacs at a DC Python meetup and I thought that it was really cool. 
 
 ---
 
@@ -61,6 +61,9 @@ We will also use Jupyter (IPython) notebooks, but this does not remove the need 
 
 What graphical editor will you use? How did you make your decision? What are some interesting features of your editor? What are some useful keyboard shortcuts for your editor? How do you customize your editor?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+1. I already had Pycharm installed and also had spyder installed because I use the Anaconda distrubtion of python (and spyder came with that). However, I have been trying to customize my emacs so that I can use it as a Python IDE.
+* I made my decision to use Pycharm/ Emacs because Pycharm is a complete package and it looks quite nice. Emacs because its interesting to have all that I need in one environment (text editing, ipython, eshell).
+  * Pycharm - I often use Shift-Option-E to send code directly from editor to console in order to evaluate the code
+  * Emacs - C-c C-c will send code to the IPython shell; I customized the editor by installing auto-complete, syntax checking, and the monokai theme
 
 ---
