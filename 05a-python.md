@@ -12,7 +12,8 @@ For quick and easy interactive practice with Python, many people enjoy [Codecade
 
 How are Python lists and tuples similar and different? Which will work as keys in dictionaries? Why?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+1. Python lists and tuples are both types of Python data structures that can be used to store information. However, while lists are mutable (can be changed), tuples are immutable (cannot be changed).
+2. Only tuples work as dictionary keys because dictionary keys must be immutable. Imagine a scenario if the keys can be changed and are changed to the same key, Python would probably have difficulty figuring out which values are actually the correct ones. 
 
 ---
 
@@ -20,7 +21,12 @@ How are Python lists and tuples similar and different? Which will work as keys i
 
 How are Python lists and sets similar and different? Give examples of using both. How does performance compare between lists and sets for finding an element. Why?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+1. Lists and sets are similar in that both are used to store information.
+* Use sets to remove duplicates or check membership
+* Use list to iterate over elements 
+2. Lists are ordered and can repeat while sets are unordered and unique.
+3. Sets are faster for checking membership (for example, x in aSet)
+* Sets are faster than lists for finding an element because it uses an underlying hash table as its data structure while lists are arrays.
 
 ---
 
@@ -28,7 +34,14 @@ How are Python lists and sets similar and different? Give examples of using both
 
 Describe Python's `lambda`. What is it, and what is it used for? Give at least one example, including an example of using a `lambda` in the `key` argument to `sorted`.
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+1. Lambda expressions (or lambda forms) can be used to create anonymous functions that can be used to define functions needed on the fly. It takes any number of arguments and returns the value of a single expression.
+2.
+
+```python
+In [8]: aList = [(1,'a'),(2,'c'),(3,'b')]
+In[9]: sorted(aList, key = lambda x:x[1])
+[(1, 'a'), (3, 'b'), (2, 'c')]
+```
 
 ---
 
