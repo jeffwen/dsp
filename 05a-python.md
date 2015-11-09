@@ -103,18 +103,22 @@ Out[5]: 937
 b.  
 ```
 date_start = '12312013'  
-date_stop = ''  
+date_stop = '05282015'  
 ```
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+```python
+Out[5]: 513
+```
 
-c.  
+c.
 ```
 date_start = '15-Jan-1994'      
 date_stop = '14-Jul-2015'  
 ```
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE  
+```python
+Out[5]: 7850
+```
 
 Place code in this file: [q5_datetime.py](python/q5_datetime.py)
 
