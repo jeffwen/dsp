@@ -82,6 +82,18 @@ Map will take a function and arugments and call the function for each element in
 In [15]: map(lambda x: x % 2 == 0, values)
 Out[15]: [True, False, True, False, True, False, True, False, True, False]
 ```
+####Set Comprehension
+
+```python
+In [16]: {x for x in range(2,51) if all(x%y for y in range(2,x))}
+Out[16]: {2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47}
+```
+####Dictionary Comprehension
+
+```python
+In [17]: {x: x**2 for x in range(5)}
+Out[17]:  {0: 0, 1: 1, 2: 4, 3: 9, 4: 16}
+```
 
 ---
 
