@@ -35,14 +35,12 @@ How are Python lists and sets similar and different? Give examples of using both
 Describe Python's `lambda`. What is it, and what is it used for? Give at least one example, including an example of using a `lambda` in the `key` argument to `sorted`.
 
 1. Lambda expressions (or lambda forms) can be used to create anonymous functions that can be used to define functions needed on the fly. It takes any number of arguments and returns the value of a single expression.
-2.
-
+2. Examples:
 ```python
 In [8]: aList = [(1,'a'),(2,'c'),(3,'b')]
 In [9]: sorted(aList, key = lambda x:x[1])
 Out[9]:[(1, 'a'), (3, 'b'), (2, 'c')]
 ```
-
 ```python
 In [10]: (lambda x: x**2 + 3)(3)
 Out[10]: 12
@@ -55,7 +53,6 @@ Out[10]: 12
 Explain list comprehensions. Give examples and show equivalents with `map` and `filter`. How do their capabilities compare? Also demonstrate set comprehensions and dictionary comprehensions.
 
 1. List comprehension is a quick way to create lists. Usually it is used in situations where an operation is applied to each element of another sequence.
-
 ```python
 In [12]: aStr = "hello, what is your name?"
 In [13]: ' '.join([x.upper() for x in aStr.split()])
@@ -67,7 +64,6 @@ In [13]: [x for x in values if x %% 2 == 0]
 Out[13]: [0, 2, 4, 6, 8]
 ```
 2. Filter will take a function and arguments and return only elements for which the function evaluates as `True`.
-
 ```python
 In [14]: filter(lambda x: x % 2 == 0, values)
 Out[14]: [0, 2, 4, 6, 8]
@@ -77,7 +73,6 @@ Out[14]: [0, 2, 4, 6, 8]
 In [15]: map(lambda x: x % 2 == 0, values)
 Out[15]: [True, False, True, False, True, False, True, False, True, False]
 ```
-
 
 ---
 
