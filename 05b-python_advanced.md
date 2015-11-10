@@ -23,15 +23,7 @@ In [5]: num_degrees(data)
 There are 7 different degrees. (note that '0' is counted as not having a degree)
 Out[5]: 
 defaultdict(int,
-            {'0': 1,
-             'BSEd': 1,
-             'JD': 1,
-             'MA': 1,
-             'MD': 1,
-             'MPH': 2,
-             'MS': 2,
-             'PhD': 31,
-             'ScD': 6})
+            {'0': 1,'BSEd': 1,'JD': 1,'MA': 1,'MD': 1,'MPH': 2,'MS': 2,'PhD': 31,'ScD': 6})
 ```
 
 ####Q2. Find how many different titles there are, and their frequencies:  Ex:  Assistant Professor, Professor
@@ -41,9 +33,7 @@ In [6]: num_titles(data)
 There are 3 different titles.
 Out[6]: 
 defaultdict(int,
-            {'Assistant Professor': 12,
-             'Associate Professor': 12,
-             'Professor': 13})
+            {'Assistant Professor': 12,'Associate Professor': 12,'Professor': 13})
 ```
 
 ####Q3. Search for email addresses and put them in a list.  Print the list of email addresses.
@@ -96,12 +86,17 @@ faculty_dict = { 'Ellenberg': [\
               ['Ph.D.', 'Associate Professor', 'mingyao@mail.med.upenn.edu'],\
               ['Ph.D.', 'Professor', 'hongzhe@upenn.edu']
                             ]
-            }
+							}
 ```
-Print the first 3 key and value pairs of the dictionary:
-
->> REPLACE THIS WITH YOUR RESPONSE
-
+			
+```python
+In [321]: faculty_dict
+Out[321]: 
+{'Bellamy': [['Sc.D.', 'Associate Professor', 'bellamys@mail.med.upenn.edu']],
+ 'Bilker': [['Ph.D.', 'Professor', 'warren@upenn.edu']],
+ 'Bryan': [['PhD', 'Assistant Professor', 'bryanma@upenn.edu']]...}
+```
+ 
 ####Q7.  The previous dictionary does not have the best design for keys.  Create a new dictionary with keys as:
 
 ```
@@ -113,14 +108,27 @@ professor_dict = {('Susan', 'Ellenberg'): ['Ph.D.', 'Professor', 'sellenbe@upenn
             }
 ```
 
-Print the first 3 key and value pairs of the dictionary:
-
->> REPLACE THIS WITH YOUR RESPONSE
+```python
+In [21]: professor_dict
+Out[21]: 
+{('Alisa', 'Stephens'): ['Ph.D.','Assistant Professor','alisaste@mail.med.upenn.edu'],
+ ('Andrea', 'Troxel'): ['ScD', 'Professor', 'atroxel@mail.med.upenn.edu'],
+ ('Benjamin', 'French'): ['PhD','Associate Professor','bcfrench@mail.med.upenn.edu']...}
+```
 
 ####Q8.  It looks like the current dictionary is printing by first name.  Sort by last name and print the first 3 key and value pairs.  
 
->> REPLACE THIS WITH YOUR RESPONSE
-
+```python
+In [37]: ordered_prof_dict
+Out[37]: 
+OrderedDict([(('Scarlett', 'Bellamy'),
+              ['Sc.D.', 'Associate Professor', 'bellamys@mail.med.upenn.edu']),
+             (('Warren', 'Bilker'),
+              ['Ph.D.', 'Professor', 'warren@upenn.edu']),
+             (('Matthew', 'Bryan'),
+              ['PhD', 'Assistant Professor', 'bryanma@upenn.edu']),
+```
+			  
 Place your code in this file: [advanced_python_dict.py](python/advanced_python_dict.py)
 
 --- 
