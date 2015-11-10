@@ -29,7 +29,6 @@ def get_min_score_difference(parsed_data):
             min_team = team[0]
     return min_team, min_score_diff
 
-
 # Maybe better solution
 def get_min_team(filename):
     data = pd.read_csv(filename)
