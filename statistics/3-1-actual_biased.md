@@ -4,4 +4,4 @@
 
 >> Mean of Biased PMF: 2.4036791006642821
 
->> ![Actual vs. Biased PMF](img/actualvbiased.png?raw=true)
+>> ![Actual vs. Biased PMF](img/actualvbiased.png)
