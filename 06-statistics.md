@@ -97,9 +97,9 @@ How do frequentist and Bayesian statistics compare?
 
 >> Bayesians view probabilities more similarly to how a layperson would view probabilities. In otherwords the probability is an indication of the likeliness of a situation to occur. Furthermore, in the explanation of observed data, explanations will probabilistically cature the uncertainty of different situations. 
 
->>> Sources:
+>>> Sources: Jake VanderPlas's [blog post](http://jakevdp.github.io/blog/2014/03/11/frequentism-and-bayesianism-a-practical-intro/); he mentions that the central difference is in the way frequentists and bayesians view and use probabilities. [Stackexchange](http://stats.stackexchange.com/questions/22/bayesian-and-frequentist-reasoning-in-plain-english); there are a lot of good, simple explanations that explain the main differences.
 
->>> Jake VanderPlas's [blog post](http://jakevdp.github.io/blog/2014/03/11/frequentism-and-bayesianism-a-practical-intro/); he mentions that the central difference is in the way frequentists and bayesians view and use probabilities.[Stackexchange](http://stats.stackexchange.com/questions/22/bayesian-and-frequentist-reasoning-in-plain-english); there are a lot of good, simple explanations that explain the main differences.
+
 ---
 
 ###Optional Exercises
