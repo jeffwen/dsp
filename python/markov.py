@@ -12,4 +12,37 @@
 
 # There are design choices to make; feel free to experiment and shape the program as you see fit. Jeff Atwood's [Markov and You](http://blog.codinghorror.com/markov-and-you/) is a fun place to get started learning about what you're trying to make.
 
-> REPLACE THIS TEXT WITH YOUR PROGRAM
+import sys
+import random
+from collections import defaultdict
+
+def markov(input_file):
+    with open(input_file, 'r') as myfile:
+        data_file = myfile.read().replace('\n', '')
+    data_split = data_file.split()
+    markov_dict = defaultdict()
+    for i in range(2, len(data_split)):
+        if (data_split[i-2], data_split[i-1]) not in markov_dict.keys():
+            markov_dict[(data_split[i-2], data_split[i-1])] = [data_split[i]]
+        else:
+            markov_dict[(data_split[i-2], data_split[i-1])].append(data_split[i])
+    return markov_dict
+
+def sentence_gen(markov_dict, num_words):
+    start = [key for key in markov_dict.keys() if key[0].isupper() and key[0][-1] != '.']
+    sent_list = list(random.choice(start))
+    while len(sent_list) < num_words:
+        try:
+            sent_list.append(random.choice(markov_dict[(sent_list[-2], sent_list[-1])]))
+        except KeyError:
+            sent_list += list(random.choice(markov_dict.keys()))
+    print ' '.join(sent_list)
+
+    
+if __name__ == "__main__":
+    markov_dict = markov(sys.argv[1])
+    sentence_gen(markov_dict, int(sys.argv[2]))
+
+## sample output
+## $ python markov.py story.txt 40
+## I that caught Nag by the hood last night in the morning he will tell the garden will be empty, and Rikki-tikki heard a scream from Teddy's mother. His father ran out with a whack on the rubbish-heap this morning,
